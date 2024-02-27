@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-space-grotesk);
+    line-height: 120%;
+}
+
+p {
+    font-family: var(--font-inter);
+    line-height: 150%
+}
