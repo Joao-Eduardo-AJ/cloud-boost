@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${spaceGrotesk.variable} bg-pageBG`}
+      className={`${inter.variable} ${spaceGrotesk.variable} bg-gray-950`}
     >
       <body>{children}</body>
     </html>
