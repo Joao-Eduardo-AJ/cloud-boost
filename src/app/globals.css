@@ -8,11 +8,91 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-space-grotesk);
-    line-height: 120%;
+  font-family: var(--font-space-grotesk);
+  line-height: 120%;
 }
 
 p {
-    font-family: var(--font-inter);
-    line-height: 150%
+  font-family: var(--font-inter);
+  line-height: 150%;
+}
+
+.hamb.is-active:hover {
+  opacity: 0.7;
+}
+.hamb.is-active .hamb-inner,
+.hamb.is-active .hamb-inner::before,
+.hamb.is-active .hamb-inner::after {
+  background-color: #F5F6FA;
+}
+
+.hamb-box {
+  width: 28px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamb-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamb-inner,
+.hamb-inner::before,
+.hamb-inner::after {
+  width: 24px;
+  height: 2px;
+  background-color: #F5F6FA;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamb-inner::before,
+.hamb-inner::after {
+  content: "";
+  display: block;
+}
+.hamb-inner::before {
+  top: -7px;
+}
+.hamb-inner::after {
+  bottom: -7px;
+}
+
+.hamb--squeeze .hamb-inner {
+  transition-duration: 0.075s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamb--squeeze .hamb-inner::before {
+  transition:
+    top 0.075s 0.12s ease,
+    opacity 0.075s ease;
+}
+.hamb--squeeze .hamb-inner::after {
+  transition:
+    bottom 0.075s 0.12s ease,
+    transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamb--squeeze.is-active .hamb-inner {
+  transform: rotate(45deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamb--squeeze.is-active .hamb-inner::before {
+  top: 0;
+  opacity: 0;
+  transition:
+    top 0.075s ease,
+    opacity 0.075s 0.12s ease;
+}
+.hamb--squeeze.is-active .hamb-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition:
+    bottom 0.075s ease,
+    transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
