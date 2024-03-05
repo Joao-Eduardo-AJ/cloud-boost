@@ -26,7 +26,8 @@ const config: Config = {
         "gray-950": "#030009"
       },
       spacing: {
-        "18": "4.5rem"
+        "18": "4.5rem",
+        "34": "8.5rem"
       }
     }
   },

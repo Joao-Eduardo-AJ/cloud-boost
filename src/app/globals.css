@@ -17,9 +17,6 @@ p {
   line-height: 150%;
 }
 
-.hamb.is-active:hover {
-  opacity: 0.7;
-}
 .hamb.is-active .hamb-inner,
 .hamb.is-active .hamb-inner::before,
 .hamb.is-active .hamb-inner::after {
@@ -27,7 +24,7 @@ p {
 }
 
 .hamb-box {
-  width: 28px;
+  width: 24px;
   height: 24px;
   display: inline-block;
   position: relative;
@@ -41,7 +38,7 @@ p {
 .hamb-inner,
 .hamb-inner::before,
 .hamb-inner::after {
-  width: 24px;
+  width: 22px;
   height: 2px;
   background-color: #F5F6FA;
   border-radius: 4px;
@@ -56,10 +53,10 @@ p {
   display: block;
 }
 .hamb-inner::before {
-  top: -7px;
+  top: -6px;
 }
 .hamb-inner::after {
-  bottom: -7px;
+  bottom: -6px;
 }
 
 .hamb--squeeze .hamb-inner {
@@ -75,6 +72,14 @@ p {
   transition:
     bottom 0.075s 0.12s ease,
     transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamb--squeeze {
+  margin-right: 0px;
+}
+
+.hamb--squeeze.is-active {
+  margin-right: -8px;
 }
 
 .hamb--squeeze.is-active .hamb-inner {
