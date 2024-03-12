@@ -10,11 +10,17 @@ h5,
 h6 {
   font-family: var(--font-space-grotesk);
   line-height: 120%;
+  cursor: default;
 }
 
 p {
   font-family: var(--font-inter);
   line-height: 150%;
+  cursor: default;
+}
+
+span {
+  cursor: default;
 }
 
 .hamb.is-active .hamb-inner,
@@ -53,10 +59,10 @@ p {
   display: block;
 }
 .hamb-inner::before {
-  top: -6px;
+  top: -7px;
 }
 .hamb-inner::after {
-  bottom: -6px;
+  bottom: -7px;
 }
 
 .hamb--squeeze .hamb-inner {
