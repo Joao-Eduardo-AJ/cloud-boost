@@ -1,13 +1,12 @@
 import Image from "next/image";
-import { MenuHamburger } from "..";
+import { MenuHamburger, Button } from "..";
 import { TextsProvider } from "@/translation";
-import { Button } from "../button";
 
 export function Header() {
   const texts = TextsProvider.get();
 
   return (
-    <header className="w-full sm:px-7">
+    <header className="w-full sm:px-7 md:px-28">
       <div className="relative flex h-16 w-full items-center justify-between overflow-hidden rounded-full border border-gray-850 bg-gray-900 px-6 md:h-18">
         <Image
           alt="logo"
