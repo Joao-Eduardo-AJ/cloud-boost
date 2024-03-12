@@ -28,6 +28,11 @@ const config: Config = {
       spacing: {
         "18": "4.5rem",
         "34": "8.5rem"
+      },
+      fontSize: {
+        "1.5xl": "1.375rem",
+        "4.5xl": "2.5rem",
+        "5.5xl": "3.5rem"
       }
     }
   },
