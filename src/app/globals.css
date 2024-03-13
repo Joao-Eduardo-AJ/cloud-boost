@@ -11,6 +11,7 @@ h6 {
   font-family: var(--font-space-grotesk);
   line-height: 120%;
   cursor: default;
+  letter-spacing: -0.03em;
 }
 
 p {
