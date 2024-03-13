@@ -24,6 +24,16 @@ span {
   cursor: default;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2C1B6A;
+  border-radius: 20px;
+  border: 3px solid #030009;
+}
+
 .hamb.is-active .hamb-inner,
 .hamb.is-active .hamb-inner::before,
 .hamb.is-active .hamb-inner::after {
