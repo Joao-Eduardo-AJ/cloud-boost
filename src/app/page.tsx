@@ -1,3 +1,4 @@
+import { Button } from "@/components";
 import { Input } from "@/components/Input";
 import { Card } from "@/components/card";
 import { Header } from "@/components/header";
@@ -10,7 +11,7 @@ export default function Home() {
   return (
     <main className="pt-4">
       <Header />
-      <section className="mx-6 mt-18 border-b border-gray-850 text-center md:mx-28 md:flex md:justify-between md:text-start">
+      <section className="mx-6 border-b border-gray-850 py-18 text-center md:mx-28 md:flex md:justify-between md:py-28 md:text-start">
         <div className="flex flex-col items-center gap-4 md:place-items-start">
           <h1 className="max-w-[602px] text-4.5xl font-bold text-gray-100 md:mt-9 md:text-5.5xl">
             {texts.FIRST_S_TITLE}
@@ -82,7 +83,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center gap-5 overflow-hidden py-18 sm:flex-row md:justify-normal md:pb-24 md:pl-4 md:pt-0">
+        <div className="flex flex-col justify-center gap-5 overflow-hidden pt-18 sm:flex-row md:justify-normal md:pl-4 md:pt-0">
           <Image
             priority
             alt="woman"
@@ -115,9 +116,9 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="mx-6 grid gap-16 border-b border-gray-850 py-18 md:mx-28">
+      <section className="mx-6 grid gap-16 border-b border-gray-850 py-18 md:mx-28 md:py-28">
         <div className="flex flex-col justify-between gap-4 text-center lg:flex-row lg:gap-0 lg:text-start">
-          <h2 className="track text-3xl font-bold text-gray-100 md:text-4.5xl max-w-2xl">
+          <h2 className="track max-w-2xl text-3xl font-bold text-gray-100 md:text-4.5xl">
             {texts.SECOND_S_TITLE}
           </h2>
           <p className="font-normal text-gray-200">{texts.SECOND_S_SUB}</p>
@@ -145,7 +146,19 @@ export default function Home() {
           />
         </div>
       </section>
-      <footer></footer>
+      <footer className="mx-6 py-18 md:mx-28 md:py-28">
+        <div className="grid place-items-center gap-6 rounded-xl bg-primary-purple-dark py-18 text-center md:py-20">
+          <div className="grid place-items-center gap-2 md:gap-4">
+            <h2 className="max-w-3xl text-3xl font-bold text-gray-100 md:text-4.5xl">
+              {texts.THIRD_S_TITLE}
+            </h2>
+            <p className="max-w-lg text-lg text-gray-200 md:text-xl">
+              {texts.THIRD_S_SUB}
+            </p>
+          </div>
+          <Button>{texts.FREE_TRIAL}</Button>
+        </div>
+      </footer>
     </main>
   );
 }
