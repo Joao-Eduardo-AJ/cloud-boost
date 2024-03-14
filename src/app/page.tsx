@@ -15,6 +15,10 @@ export default function Home() {
         <div className="flex flex-col items-center gap-4 md:place-items-start">
           <h1 className="max-w-[602px] text-4.5xl font-bold text-gray-100 md:mt-9 md:text-5.5xl">
             {texts.FIRST_S_TITLE}
+            <span className="text-primary-purple">
+              {" "}
+              {texts.FIRST_S_AUX_TITLE}.{" "}
+            </span>
           </h1>
           <p className="mb-4 max-w-[492px] text-gray-200 md:text-1.5xl">
             {texts.FIRST_S_SUB}

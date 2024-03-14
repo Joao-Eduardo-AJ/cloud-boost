@@ -1,5 +1,6 @@
 export const Texts = {
   FIRST_S_TITLE: "Herramientas de Email Marketing Perfectas para",
+  FIRST_S_AUX_TITLE: "tu negocio",
   FIRST_S_SUB:
     "Aprovecha el potencial del email marketing para aumentar las ventas y fortalecer tus relaciones con los clientes.",
 

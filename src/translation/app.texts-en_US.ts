@@ -1,5 +1,6 @@
 export const Texts = {
   FIRST_S_TITLE: "Perfect Email Marketing Tools for",
+  FIRST_S_AUX_TITLE: "your business",
   FIRST_S_SUB:
     "Harness the potential of email marketing to boost sales and strengthen your customer relationships.",
 
